@@ -1,0 +1,23 @@
+# See https://nextjs.org/docs/api-reference/cli for more details on ignoring files with Next.js
+
+# Node.js
+node_modules
+
+# Next.js
+/.next/
+/out/
+
+# Compiled files
+*.pem
+*.log
+*.pkl
+*.pyc
+*.pickle
+*.class
+*.swp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
