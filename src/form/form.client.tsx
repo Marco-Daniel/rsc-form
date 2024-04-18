@@ -30,7 +30,12 @@ export default function FormClientCompnent({ children, formAction }: FormClientP
 
   return (
     <Provider value={control}>
-      <form ref={formRef} action={action} onSubmit={handleSubmit(() => formRef.current?.submit())}>
+      <form
+        style={{ maxWidth: '300px', display: 'flex', flexDirection: 'column', gap: '8px' }}
+        ref={formRef}
+        action={action}
+        onSubmit={handleSubmit(() => formRef.current?.submit())}
+      >
         {children}
       </form>
       {Object.keys(formState.errors).length > 0 && <pre>{JSON.stringify(formState.errors, null, 2)}</pre>}

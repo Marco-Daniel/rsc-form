@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 First, install packages
+
 ```bash
 npm install
 ```
@@ -21,5 +22,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## RSC Form
 
-This is a demo of how to combine server components in a form and still make use of client side validation using zod and react-hook-form. 
+This is a demo of how to combine server components in a form and still make use of client side validation using zod and react-hook-form.
 By breaking all compnents into client and server component and handle the respective logic where needed, along with using context to pass data around between the form and its components only on the client you can achieve the best of both worlds.

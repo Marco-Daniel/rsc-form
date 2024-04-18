@@ -16,9 +16,7 @@ export default function FormServerComponent() {
   return (
     <Form formAction={submitAction}>
       <UserNameField />
-      <br />
       <PlanetsServerSelect />
-      <br />
       <Submit />
     </Form>
   );

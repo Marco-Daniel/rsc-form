@@ -11,7 +11,14 @@ export default function UserNameField() {
       name="username"
       control={control}
       defaultValue=""
-      render={({ field }) => <TextField {...field} label="User Name" variant="outlined" fullWidth />}
+      render={({ field, fieldState }) => (
+        <>
+          <TextField {...field} label="User Name" variant="outlined" fullWidth />
+          {fieldState.error?.message ? (
+            <span style={{ fontSize: '10px', color: 'red' }}>{fieldState.error.message}</span>
+          ) : null}
+        </>
+      )}
     />
   );
 }

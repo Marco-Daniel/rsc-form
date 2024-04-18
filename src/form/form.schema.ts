@@ -6,5 +6,5 @@ export const schema = z.object({
     .string()
     .trim()
     .min(1, 'Name is required')
-    .refine(val => val !== 'Hoth', { message: "You cnnot select 'Hoth'" }),
+    .refine(val => val !== 'Hoth', { message: "You cannot select 'Hoth'" }),
 });

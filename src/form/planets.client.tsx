@@ -17,7 +17,7 @@ export default function PlanetsClientSelect({ planets }: { planets: Planet[] }) 
       defaultValue=""
       render={({ field, fieldState }) => (
         <>
-          <Select {...field}>
+          <Select {...field} fullWidth>
             {planets.map(planet => (
               <Option key={planet.name} value={planet.name}>
                 {planet.name}
